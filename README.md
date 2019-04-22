@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 It simulates the shopping cart of an online store.<br>
 
-The app uses Redux for managing the state of the cart. [Context/Hooks](https://www.academind.com/learn/react/redux-vs-context-api/) were not used.<br>
+The app uses Redux for managing the state of the cart. [Context/Hooks](https://www.academind.com/learn/react/redux-vs-context-api/) are an alternative but were not used.<br>
 
 The code for the cart (Redux) has been fully tested using Jest, Enzyme and Moxios for 100% coverage. The code for the majority of the components has also been tested but time limitations prevented 100% coverage.<br>
 
