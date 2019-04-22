@@ -97,8 +97,6 @@ describe("The CartPopup container", () => {
 		const  wrapper = shallow(<CartPopup {...props} />);
 		const instance = wrapper.instance();
 
-		console.log('wr', wrapper.debug())
-
 		it('should contain the modal close class', () => {
     		expect(wrapper.exists('.close')).toEqual(true);
   		});
