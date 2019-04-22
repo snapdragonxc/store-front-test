@@ -1,0 +1,45 @@
+.btn {
+	display: inline-block;
+	padding: 15px 18px 15px 18px;
+	font-size: 11px;
+	background-color: #111;
+	color: #fff;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	border: 1px solid #111;
+	margin: 5px;
+	text-align: center;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: #333;
+	border: 1px solid #333;
+	cursor: pointer;
+}
+
+.reverse {
+	background-color: #fff;
+	color: #111;
+	border: 1px solid #111;
+}
+
+.btn.reverse:hover {
+	background-color: #f1f1f1;
+	border: 1px solid #999;
+	cursor: pointer;
+	color: #333;
+}
+
+.half-width {
+	width: calc(50% - 10px);
+}
+
+.full-width {
+	width: calc(100% - 10px);
+}
+
+.no-margin {
+	margin: 0;
+}

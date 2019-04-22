@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+import { BrowserRouter, Route } from 'react-router-dom';
+
 import './App.css';
+import './Grid.css';
+import Category from "./category/Category";
+import Cart from "./cart/Cart";
+import Product from "./product/Product";
+import Header from "./header/Header";
+//
+// redux
+
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <Provider store={store}>
+          <BrowserRouter>
+            <Header />
+            <Route exact path="/" component={Category} />
+            <Route path="/cart" component={Cart}/>
+            <Route path="/product/:id" component={Product}/>
+          </BrowserRouter>
+        </Provider>
+       </div>
     );
   }
 }

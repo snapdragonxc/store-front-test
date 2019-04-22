@@ -1,0 +1,148 @@
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  right: 0;
+  top: 0;
+  width: calc(100vw - 17px); /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+
+  
+}
+
+.open {
+	display: block;
+}
+
+.close {
+	display: none;
+}
+
+/* Modal Content */
+.modal-content {
+  	border: 1px solid #fefefe;
+	width: 400px;
+	padding: 10px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 1.2;
+	background-color: #fff;
+	position: absolute;
+	right: 0px;
+	top: 105px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.cart-popup__total {
+	display: flex;
+	justify-content: space-between;
+	color: #888;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+}
+
+.cart-popup__btns {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.cart-popup__table {
+  width:100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.cart-popup__td, 
+.cart-popup__th {
+  padding: 8px;
+  vertical-align: top;
+}
+
+.cart-popup__td:first-child {
+	padding-left: 0px;
+}
+
+.cart-popup__td:last-child {
+	position: relative; 
+}
+
+.cart-popup__title {
+	color: #111;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.cart-popup__qty {
+	text-transform: lowercase;
+	color: #888;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.cart-popup__brand {
+	font-size: 12px;
+	color: #888;
+	letter-spacing: normal;
+	margin-bottom: 5px;
+}
+
+.cart-popup__price {
+	color: #111;
+	font-weight: bold;
+}
+
+.cart-popup__img-container
+.cart-popup__img {
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+	float: left;
+	margin-right: 8px;
+}
+
+.cart-popup__empty {
+
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: center;
+
+	align-items: center;
+
+	height: 200px;
+}
+
+.cart-popup__empty-msg {
+	padding-bottom: 40px;
+}
+
+
+.cart-popup__table {
+	
+}
+
+
+.cart-popup__remove {
+	color: #aaa;
+	font-size: 32px;
+	font-weight: normal;
+	position: absolute;
+	top: -3px;
+	right: 0; 
+}
+
+.cart-popup__remove:hover,
+.cart-popup__remove:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

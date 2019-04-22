@@ -1,0 +1,138 @@
+
+.products-header__caption,
+.products-header__bkgnd {
+	height: 400px;
+}
+
+
+.products-header__bkgnd {
+	overflow: hidden;
+}
+
+.products-header__caption {
+	background-color: #262626;
+	color: #fff;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+}
+
+.products-header__caption-container {
+	background-color: #fff;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+
+.products-header__img {
+	height: 100%;
+}
+
+.products-header__img--right {
+	float: right;
+}
+
+.products-header__title {
+	font-family: serif;
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;	
+	border-bottom: 1px solid #fff;
+}
+
+
+.products-header__description {
+	/*border: 1px solid red; */
+	line-height: 1.4;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 15px;
+}
+
+.category__products {
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.products {
+	text-decoration: none;
+	list-style: none;
+}
+
+.product {
+	padding: 15px;
+
+}
+
+.product__img-contain {
+	overflow: hidden;
+}
+
+.product__img {	
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.product__brand,
+.product__title,
+.product__price {
+	text-align: center;
+	font-size: 14px;
+	color: #555555;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.product__title {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: normal;
+	color: #000;
+}
+
+
+@media screen and (min-width: 768px) {
+	.product__img {	
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+}
+
+
+/* hover over effect */
+
+.product__img-container {
+	position: relative;
+}
+
+.product:hover .product__img {
+  opacity: 0.5;
+}
+
+.product:hover .product-tile-overlay {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.product-tile-overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
