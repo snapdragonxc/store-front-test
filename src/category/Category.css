@@ -95,6 +95,17 @@
 	color: #000;
 }
 
+.product__title {
+	height: 32px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.product__price {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
 
 @media screen and (min-width: 768px) {
 	.product__img {	

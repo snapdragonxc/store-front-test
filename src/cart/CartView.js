@@ -63,7 +63,7 @@ const CartView = ({ cart, onChange, onRemove }: CartViewPropsType) => {
 						/>
 					</td>
 					<td className="cart__td cart__subtotal">
-						${subTotal}.00
+						${Number(subTotal).toFixed(2)}
 					</td>
 					<td className="cart__td">
 						<span className="cart__close" onClick={e => onRemove(productIndex)}></span>
@@ -118,7 +118,7 @@ const CartView = ({ cart, onChange, onRemove }: CartViewPropsType) => {
 					<div className="cart__overview">
 						<div className="cart__total">CART OVERVIEW</div>
 						<div className="cart__total"><span>SUBTOTAL</span><span>${total}.00</span></div>
-						<div className="cart__total"><span>TOTAL</span><span className="cart__total-bold">${total}.00 CAD</span></div>
+						<div className="cart__total"><span>TOTAL</span><span className="cart__total-bold">${Number(total).toFixed(2)} CAD</span></div>
 					</div>
 
 					<div className="clear-fix"></div>
@@ -127,7 +127,7 @@ const CartView = ({ cart, onChange, onRemove }: CartViewPropsType) => {
 						<div className="cart__link-container">
 							<Link to="/" className="cart__link">CONTINUE SHOPPING</Link>
 						</div>
-						<Btn label={`checkout ($${total}.00)`} btnStyle={'no-margin'} btnClick={e => {}} />
+						<Btn label={`checkout ($${Number(total).toFixed(2)})`} btnStyle={'no-margin'} btnClick={e => {}} />
 					</footer>
 				</div>
 			}

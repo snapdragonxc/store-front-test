@@ -42,7 +42,7 @@ const CategoryView = ({
 						</div>
 						<div className="product__brand">{brand}</div>
 						<h3 className="product__title">{title}</h3>
-						<div className="product__price">${price}</div>
+						<div className="product__price">${Number(price).toFixed(2)}</div>
 					</li>
 					{
 		               (index + 1) % 3 === 0

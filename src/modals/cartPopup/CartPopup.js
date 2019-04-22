@@ -77,7 +77,7 @@ export class CartPopup extends Component<CartPopupPropsType, CartPopupStateType>
 									<span className="cart-popup__qty"> x {quantity}</span>
 								</div>
 								<div className="cart-popup__brand">{product.brand}</div>
-								<div className="cart-popup__price">${product.price}.00</div>
+								<div className="cart-popup__price">${Number(product.price).toFixed(2)}</div>
 							</div>
 						</td>
 
@@ -109,7 +109,7 @@ export class CartPopup extends Component<CartPopupPropsType, CartPopupStateType>
 
 							<div className="cart-popup__total">
 								<span>TOTAL</span>
-								<span>${total}.00</span>
+								<span>${Number(total).toFixed(2)}</span>
 							</div>
 
 							<div className="cart-popup__btns">

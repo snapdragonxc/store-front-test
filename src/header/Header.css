@@ -54,6 +54,10 @@
 	color: #666;
 }
 
+.header__cart-link {
+	padding-right: 10px;
+}
+
 
 
 @media screen and (min-width: 768px) {

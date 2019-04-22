@@ -48,7 +48,7 @@ const ProductView = ({ product, addToCart, onCnt }: ProductViewPropsType) => {
 				<div className="detail__txt sm-col-span-12 lg-col-span-5">
 					<div className="detail__brand">{brand}</div>
 					<h3 className="detail__title">{title}</h3>
-					<div className="detail__price">${price}.00</div>
+					<div className="detail__price">${Number(price).toFixed(2)}</div>
 					<div className="detail__description">{description}</div>
 					<div className="detail__ui">
 						<Counter handleChange={onCnt} />
