@@ -12,7 +12,7 @@ The app uses Flow for type checking the input of the components.<br>
 
 A CSS grid (with float) has been used to allow for a responsive design. A mobile version has not been provided.<br>
 
-For convenience, the React code was structured using the [presentation and container](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) pattern (taking into consideration the 2019 update)<br>
+For convenience, the React code was structured using the [Presentation and Container](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) pattern (taking into consideration the 2019 update).<br>
 
 ### `npm start`
 
