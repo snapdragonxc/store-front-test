@@ -1,6 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-It simulates the shopping cart of an online store.<br>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It simulates the shopping cart of an online store.<br>
 
 The app uses Redux for managing the state of the cart. [Context/Hooks](https://www.academind.com/learn/react/redux-vs-context-api/) are an alternative but were not used due to the 'gotchas' outlined in the article and because it is still quite new.<br>
 
