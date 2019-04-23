@@ -82,7 +82,7 @@ export class CartPopup extends Component<CartPopupPropsType, CartPopupStateType>
 						</td>
 
 						<td className="cart-popup__td">
-							<span className="cart-popup__remove" onClick={e => this.onRemove(productIndex)}>&times;</span>
+							<a className="cart-popup__remove" onClick={e => this.onRemove(productIndex)}>&times;</a>
 						</td>
 					</tr>
 				)
