@@ -31,8 +31,8 @@ const CategoryView = ({
 			const { title, brand, price, image } = product;
 
 			return (
-				<React.Fragment>
-					<li className="product  sm-col-span-12 lg-col-span-4" key={index} >
+				<React.Fragment key={index}>
+					<li className="product  sm-col-span-12 lg-col-span-4">
 						<div className="product__img-container">
 							<img alt="product" className="product__img" src={`${process.env.PUBLIC_URL || ''}/media/${image}`}/>
 							<div className="product-tile-overlay">	

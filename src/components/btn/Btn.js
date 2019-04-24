@@ -9,7 +9,7 @@ type BtnPropsType = {
 };
 
 export const Btn = ({ label, btnStyle, btnClick }: BtnPropsType ) => (
-	<a className={`btn ${btnStyle || ''}`} onClick={e => btnClick(e)}>
+	<a href="#" className={`btn ${btnStyle || ''}`} onClick={e => btnClick(e)}>
 		{label}
 	</a>
 )

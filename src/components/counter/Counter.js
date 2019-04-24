@@ -23,8 +23,7 @@ export class Counter extends Component<CounterPropsType, CounterStateType> {
     }
 
     onPlus: Function
-    onPlus(event) {
-        event.preventDefault();
+    onPlus() {
     	let cnt = this.state.value;
     	cnt = cnt + 1;
     	this.setState({value: cnt});   	
@@ -32,8 +31,7 @@ export class Counter extends Component<CounterPropsType, CounterStateType> {
     }
 
     onMinus: Function
-    onMinus(event) {
-        event.preventDefault();
+    onMinus() {
     	let cnt = this.state.value;
     	cnt = cnt - 1;
     	if (cnt < 1) return;
@@ -46,8 +44,8 @@ export class Counter extends Component<CounterPropsType, CounterStateType> {
 		return (
 		   <div className="counter">
 				<span className="counter__display">{value}</span>
-				<a className="counter__ctrl counter__ctrl--plus" onClick={e => this.onPlus(e)}>+</a>
-				<a className="counter__ctrl counter__ctrl--minus" onClick={e => this.onMinus(e)}>-</a>
+				<a href="#" className="counter__ctrl counter__ctrl--plus" onClick={e => this.onPlus()}>+</a>
+				<a href="#" className="counter__ctrl counter__ctrl--minus" onClick={e => this.onMinus()}>-</a>
 			</div> 
 		)
 	}

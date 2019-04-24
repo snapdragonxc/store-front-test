@@ -20,7 +20,7 @@ describe("The Btn Component", () => {
 		const instance = wrapper.instance();
 
 		it('should mount with the correct label', () => {	
-			expect(wrapper.find('div').text()).toEqual(label);
+			expect(wrapper.find('a').text()).toEqual(label);
 		});
 
 		it('should mount with the correct style', () => {	
@@ -29,7 +29,7 @@ describe("The Btn Component", () => {
 
 		it('should call the btnClick function when the button is clicked', () => {	
 			jest.spyOn(props, 'btnClick');
-			wrapper.find('div').simulate('click');
+			wrapper.find('a').simulate('click');
 			expect(props.btnClick).toHaveBeenCalled();	
 		});
 	});
@@ -44,7 +44,7 @@ describe("The Btn Component", () => {
 		const instance = wrapper.instance();
 
 		it('should mount with the correct label', () => {	
-			expect(wrapper.find('div').text()).toEqual(label);
+			expect(wrapper.find('a').text()).toEqual(label);
 		});
 	});
 });
