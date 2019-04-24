@@ -52,7 +52,8 @@ export class CartPopup extends Component<CartPopupPropsType, CartPopupStateType>
     }
 
     onRemove: Function
-    onRemove(productIndex: number) {
+    onRemove(event: any, productIndex: number) {
+    	event.preventDefault();
     	const { removeFromCart } = this.props;
         if (productIndex || productIndex === 0) removeFromCart(productIndex);  
     }
@@ -82,7 +83,7 @@ export class CartPopup extends Component<CartPopupPropsType, CartPopupStateType>
 						</td>
 
 						<td className="cart-popup__td">
-							<a className="cart-popup__remove" onClick={e => this.onRemove(productIndex)}>&times;</a>
+							<a href="/" className="cart-popup__remove" onClick={e => this.onRemove(e, productIndex)}>&times;</a>
 						</td>
 					</tr>
 				)

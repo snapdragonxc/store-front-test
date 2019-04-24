@@ -49,7 +49,8 @@ export class Cart extends Component<CartPropsType, CartStateType> {
 	}
 
     onRemove: Function
-    onRemove(productIndex: number) {
+    onRemove(e, productIndex: number) {
+        e.preventDefault();
         const { removeFromCart } = this.props;
         if (productIndex || productIndex === 0) removeFromCart(productIndex); 
     }

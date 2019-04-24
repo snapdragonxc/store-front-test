@@ -49,15 +49,17 @@ describe("The CartPopup container", () => {
 
 			jest.spyOn(props, 'removeFromCart');
 			const productIndex = undefined;
-			instance.onRemove(productIndex);			// the remove button
+			const event = {preventDefault: () => {}}
+			instance.onRemove(event, productIndex);			// the remove button
 			expect(props.removeFromCart).not.toHaveBeenCalled();	
-		});
+		}); 
 
 		it('should remove from the cart when the remove button is clicked with valid product index', () => {	
 			jest.clearAllMocks();
 			jest.spyOn(props, 'removeFromCart');
 			const productIndex = 1;
-			instance.onRemove(productIndex);			// the remove button
+			const e = {preventDefault: () => {}}
+			instance.onRemove(e, productIndex);			// the remove button
 			expect(props.removeFromCart).toHaveBeenCalled();	
 		});
 
@@ -65,9 +67,10 @@ describe("The CartPopup container", () => {
 			jest.clearAllMocks();
 			jest.spyOn(props, 'removeFromCart');
 			const productIndex = 1;
-			instance.onRemove(productIndex);			// the remove button
+			const event = {preventDefault: () => {}}
+			instance.onRemove(event, productIndex);			// the remove button
 			expect(props.removeFromCart).toHaveBeenCalledWith(productIndex);	
-		});
+		}); 
 	});
 
 	describe("CartPopup View when open", () => {

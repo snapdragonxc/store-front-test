@@ -15,6 +15,7 @@ describe("The Cart container", () => {
 			updateCart: jest.fn(),
   			removeFromCart: jest.fn()
 		};
+		const event = {preventDefault: () => {}}
 
 		const  wrapper = shallow(<Cart {...props} />);
 		const instance = wrapper.instance();
@@ -55,7 +56,7 @@ describe("The Cart container", () => {
 		it('should not remove from the cart when the remove button is clicked with invalid product index', () => {	
 			jest.spyOn(props, 'removeFromCart');
 			const productIndex = undefined;
-			instance.onRemove(productIndex);			// the remove button
+			instance.onRemove(event, productIndex);			// the remove button
 			expect(props.removeFromCart).not.toHaveBeenCalled();	
 		});
 
@@ -63,22 +64,22 @@ describe("The Cart container", () => {
 			jest.clearAllMocks();	
 			jest.spyOn(props, 'removeFromCart');
 			const productIndex = 0;
-			instance.onRemove(productIndex);			// the remove button
+			instance.onRemove(event, productIndex);			// the remove button
 			expect(props.removeFromCart).toHaveBeenCalled();	
 		});
 
 		it('should remove from the cart when the remove button is clicked with valid product index', () => {	
 			jest.spyOn(props, 'removeFromCart');
 			const productIndex = 1;
-			instance.onRemove(productIndex);			// the remove button
+			instance.onRemove(event, productIndex);			// the remove button
 			expect(props.removeFromCart).toHaveBeenCalled();	
 		});
 
 		it('should remove from the cart with correct index when the remove button is clicked with valid product index', () => {	
 			jest.spyOn(props, 'removeFromCart');
 			const productIndex = 1;
-			instance.onRemove(productIndex);			// the remove button
+			instance.onRemove(event, productIndex);			// the remove button
 			expect(props.removeFromCart).toHaveBeenCalledWith(productIndex);	
-		});
+		}); 
 	});
 });
