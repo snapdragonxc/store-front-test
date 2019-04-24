@@ -44,8 +44,8 @@ export class Counter extends Component<CounterPropsType, CounterStateType> {
 		return (
 		   <div className="counter">
 				<span className="counter__display">{value}</span>
-				<a href="#" className="counter__ctrl counter__ctrl--plus" onClick={e => this.onPlus()}>+</a>
-				<a href="#" className="counter__ctrl counter__ctrl--minus" onClick={e => this.onMinus()}>-</a>
+				<button className="counter__ctrl counter__ctrl--plus" onClick={e => this.onPlus()}>+</button>
+				<button className="counter__ctrl counter__ctrl--minus" onClick={e => this.onMinus()}>-</button>
 			</div> 
 		)
 	}

@@ -9,9 +9,9 @@ type BtnPropsType = {
 };
 
 export const Btn = ({ label, btnStyle, btnClick }: BtnPropsType ) => (
-	<a href="#" className={`btn ${btnStyle || ''}`} onClick={e => btnClick(e)}>
+	<button className={`btn ${btnStyle || ''}`} onClick={e => btnClick(e)}>
 		{label}
-	</a>
+	</button>
 )
 
 export default Btn;

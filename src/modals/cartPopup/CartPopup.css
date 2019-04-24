@@ -138,6 +138,7 @@
 	position: absolute;
 	top: -3px;
 	right: 0; 
+	text-decoration: none;
 }
 
 .cart-popup__remove:hover,

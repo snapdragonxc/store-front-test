@@ -180,6 +180,7 @@
 /* close symbol */
 
 .cart__close {
+	display: inline-block;
 	position: absolute;
 	right: 0;
 	top: 24px;

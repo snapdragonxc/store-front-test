@@ -66,7 +66,7 @@ const CartView = ({ cart, onChange, onRemove }: CartViewPropsType) => {
 						${Number(subTotal).toFixed(2)}
 					</td>
 					<td className="cart__td">
-						<a href="#" className="cart__close" onClick={e => onRemove(productIndex)}></a>
+						<a className="cart__close" onClick={e => onRemove(productIndex)}></a>
 					</td>
 				</tr>
 			)
